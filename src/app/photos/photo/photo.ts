@@ -7,4 +7,5 @@ export interface Photo {
     likes: string;
     comments: number;
     userId: number;
+    total: number;
 }
