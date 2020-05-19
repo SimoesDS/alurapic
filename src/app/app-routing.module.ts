@@ -12,7 +12,7 @@ const routes: Routes = [
     path: 'user/:userName',
     component: PhotoListComponent,
     resolve: {
-      photos: PhotoListResolver
+      dataListPhotos: PhotoListResolver
     }
   },
   {

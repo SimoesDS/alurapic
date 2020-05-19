@@ -7,5 +7,9 @@ export interface Photo {
     likes: string;
     comments: number;
     userId: number;
+}
+
+export interface DataListPhotos {
+    photos: Photo[];
     total: number;
 }

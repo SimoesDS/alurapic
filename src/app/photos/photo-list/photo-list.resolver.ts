@@ -3,15 +3,15 @@ import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/r
 import { Observable } from 'rxjs';
 
 import { PhotoService } from '../photo/photo.service';
-import { Photo } from '../photo/photo';
+import { DataListPhotos } from '../photo/photo';
 
 
 @Injectable({ providedIn: 'root' })
-export class PhotoListResolver implements Resolve<Observable<Photo[]>>{
+export class PhotoListResolver implements Resolve<Observable<DataListPhotos>>{
 
     constructor(private service: PhotoService) { }
     
-    resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Photo[]> | Observable<Observable<Photo[]>> | Promise<Observable<Photo[]>> {
+    resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<DataListPhotos> | Observable<Observable<DataListPhotos>> | Promise<Observable<DataListPhotos>> {
         const userName = route.params.userName;
         return this.service.listFromUserPagenated(userName, 1);
     }
