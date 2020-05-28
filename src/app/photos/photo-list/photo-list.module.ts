@@ -7,6 +7,8 @@ import { PhotoListComponent } from './photo-list.component';
 import { FilterByDescription } from './filter-by-description.pipe';
 import { PhotoModule } from '../photo/photo.module';
 import { CardModule } from '../../shared/components/card/card.module';
+import { SearchComponent } from './search/search.component';
+
 
 
 @NgModule({
@@ -14,7 +16,8 @@ import { CardModule } from '../../shared/components/card/card.module';
         PhotoListComponent,
         PhotosComponent,
         LoadButtonComponent,
-        FilterByDescription
+        FilterByDescription,
+        SearchComponent
     ],
     imports:[ 
         CommonModule,
