@@ -4,7 +4,7 @@
 
 <ol class="list-unstyle">
     <li *ngFor="let cols of rows" class="row no-gutters">
-        <div *ngFor="let photo of cols" class="col-4 p-2">
+        <div *ngFor="let photo of cols" class="col-4 p-2" apDarkenOnHover brightness="75%">
             <ap-card [title]="photo.description">
                 <ap-photo
                         [url]="photo.url"
