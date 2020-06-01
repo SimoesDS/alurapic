@@ -7,16 +7,9 @@ import { PhotosModule } from './photos/photos.module';
 import { ErrorsModule } from './errors/errors.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    PhotosModule,
-    ErrorsModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, PhotosModule, ErrorsModule],
   providers: [],
-  bootstrap: [ AppComponent ]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

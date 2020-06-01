@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { PhotoFormComponent } from './photo-form.component';
 
 @NgModule({
-    declarations: [ PhotoFormComponent ],
-    imports: [ CommonModule ]
+  declarations: [PhotoFormComponent],
+  imports: [CommonModule],
 })
-export class PhotoFormModule { }
+export class PhotoFormModule {}
